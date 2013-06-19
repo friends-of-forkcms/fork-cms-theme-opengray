@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<name>opengray</name>
+	<version>1.0.0</version>
+	<requirements>
+		<minimum_version>3.6.0</minimum_version>
+	</requirements>
+	<thumbnail>thumbnail.png</thumbnail>
+	<description>
+		<![CDATA[
+			A corporate theme with a lot of nice features such as mail design and editor templates. For best usage the profiles module is required.
+		]]>
+	</description>
+	<authors>
+		<author>
+			<name>Dieter Wyns</name>
+			<url>http://www.fork-cms.com</url>
+		</author>
+	</authors>
+	<metanavigation supported="true" />
+	<templates>
+		<template label="default" path="core/layout/templates/default.tpl">
+			<positions>
+				<position name="main" />
+				<position name="top">
+					<defaults>
+						<widget module="search" action="form" />
+					</defaults>
+				</position>
+				<position name="login">
+					<defaults>
+						<widget module="profiles" action="login_box" />
+					</defaults>
+				</position>
+				<position name="doormat" />
+			</positions>
+			<format>
+				[/,/,top,top], [/,/,login,login], [main,main,main,main], [/,doormat,/,/]
+			</format>
+		</template>
+		<template label="home" path="core/layout/templates/home.tpl">
+			<positions>
+				<position name="main" />
+				<position name="left" />
+				<position name="right" />
+				<position name="top">
+					<defaults>
+						<widget module="search" action="form" />
+					</defaults>
+				</position>
+				<position name="login">
+					<defaults>
+						<widget module="profiles" action="login_box" />
+					</defaults>
+				</position>
+				<position name="doormat" />
+			</positions>
+			<format>
+				[/,/,top,top], [/,/,login,login], [main,main,main,main], [left,left,right,right], [/,doormat,doormat,/]
+			</format>
+		</template>
+		<template label="one page" path="core/layout/templates/onepage.tpl">
+			<positions>
+				<position name="main" />
+				<position name="bottom" />
+				<position name="top">
+					<defaults>
+						<widget module="search" action="form" />
+					</defaults>
+				</position>
+				<position name="login">
+					<defaults>
+						<widget module="profiles" action="login_box" />
+					</defaults>
+				</position>
+				<position name="doormat" />
+			</positions>
+			<format>
+				[/,/,top], [/,/,login], [main,main,main], [bottom,bottom,bottom], [/,doormat,/]
+			</format>
+		</template>
+		<template label="2 columns" path="core/layout/templates/2col.tpl">
+			<positions>
+				<position name="main" />
+				<position name="right" />
+				<position name="bottom" />
+				<position name="top">
+					<defaults>
+						<widget module="search" action="form" />
+					</defaults>
+				</position>
+				<position name="login">
+					<defaults>
+						<widget module="profiles" action="login_box" />
+					</defaults>
+				</position>
+				<position name="doormat" />
+			</positions>
+			<format>
+				[/,/,top], [/,/,login], [main,main,right], [bottom,bottom,bottom], [/,doormat,/]
+			</format>
+		</template>
+		<template label="3 columns" path="core/layout/templates/3col.tpl">
+			<positions>
+				<position name="main" />
+				<position name="left" />
+				<position name="right" />
+				<position name="bottom" />
+				<position name="top">
+					<defaults>
+						<widget module="search" action="form" />
+					</defaults>
+				</position>
+				<position name="login">
+					<defaults>
+						<widget module="profiles" action="login_box" />
+					</defaults>
+				</position>
+				<position name="doormat" />
+			</positions>
+			<format>
+				[/,/,top], [/,/,login], [left,main,right], [bottom,bottom,bottom], [/,doormat,/]
+			</format>
+		</template>
+		<template label="search" path="core/layout/templates/search.tpl">
+			<positions>
+				<position name="main" />
+				<position name="top" />
+				<position name="login">
+					<defaults>
+						<widget module="profiles" action="login_box" />
+					</defaults>
+				</position>
+			</positions>
+			<format>
+				[/,/,top], [/,/,login], [main, main, main]
+			</format>
+		</template>
+	</templates>
+</theme>

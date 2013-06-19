@@ -1,0 +1,819 @@
+/*
+	Forms
+	Media: screen, projection
+	Author: Yoni De Beule
+	        Johan Ronsse
+*/
+
+
+/* formBlock */
+
+.formBlock {
+	background: #f4f4f5;
+	padding: 24px;
+	margin-bottom: 24px;
+}
+
+/* General fields and textareas */
+
+ input.inputText,
+ input.inputPassword,
+ input.inputSearch,
+ input.inputDate,
+ textarea {
+	padding: 5px;
+	border: 1px solid #ccc;
+	margin: 0;
+}
+
+
+/* module specific css */
+
+#searchIndex .inputText {
+	border-color: #999 #bbb #bbb #bbb;
+	border-style: solid;
+	border-width: 1px;
+	margin: 0;
+	background-color: #fff;
+	background-image: none;
+	background-image: -moz-linear-gradient(0% 3px 90deg,#fff, #cecece);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 3, from(#cecece), to(#fff));
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 10px 6px;
+	width: 550px;
+	font-family: "proxima-nova", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #a9a9a9;
+	float: left;
+}
+
+#searchIndex .inputSubmit {
+	float: left;
+	padding: 10px 30px;
+	margin-left: 10px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+	.ie8 #searchIndex .inputSubmit {
+		padding: 9px 30px;
+	}
+
+textarea {
+	line-height: 1.5;
+}
+
+input.inputText:focus,
+input.inputPassword:focus,
+input.inputSearch:focus,
+input.inputDate:focus,
+textarea:focus {
+	background-color: #fff;
+	background-image: none;
+	background-image: -moz-linear-gradient(0% 3px 90deg,#fff, #dedede);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 3, from(#dedede), to(#fff));
+	-webkit-box-shadow: 0 0 3px #c2deff;
+	-moz-box-shadow: 0 0 3px #c2deff;
+	box-shadow: 0 0 3px #c2deff;
+	border-color: #82a7d4;
+	color: #000;
+	outline: none
+}
+
+input.inputText[disabled],
+input.inputPassword[disabled],
+input.inputSearch[disabled],
+input.inputDate[disabled],
+textarea[disabled] {
+	color: #999;
+	background-color: #f4f4f4;
+	background-image: none;
+	background-image: -moz-linear-gradient(0% 3px 90deg,#f4f4f4, #c4c4c4);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 3, from(#c4c4c4), to(#f4f4f4));
+}
+
+/* Selects */
+
+select {
+	margin-top: 2px;
+}
+
+	option {
+		width: auto;
+	}
+
+/* Input lists */
+
+.inputList, .content .inputList {
+	padding-bottom: 6px;
+}
+
+.inputList li, .content .inputList li {
+		padding-left: 0;
+		position: relative;
+		padding-bottom: 6px;
+		list-style-type: none;
+		background: none;
+	}
+
+		.inputList label {
+			overflow: visible;
+			height: auto;
+			padding: 0;
+		}
+
+/* Fieldsets and legends */
+
+.visibleFieldset {
+	border: 1px solid #ddd;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 12px 12px 0 12px;
+	margin-bottom: 12px;
+}
+
+.visibleFieldset:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ie6 .visibleFieldset, .ie7 .visibleFieldset { zoom: 1; }
+
+	legend {
+		font-weight: 700;
+		color: #999;
+	}
+
+		.ie6 legend {
+			margin-bottom: 10px;
+		}
+
+/* Paragraph */
+
+form p { padding: 0 0 12px; }
+form p:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ie6 form p, .ie7 form p { zoom: 1; }
+
+/* Labels */
+
+label,
+.label {
+	display: block;
+	padding-bottom: 6px;
+	overflow: hidden;
+}
+
+/* Inline errors */
+
+.errorArea input.inputText,
+.errorArea input.inputPassword,
+.errorArea input.inputSearch,
+.errorArea input.inputDate,
+.errorArea textarea {
+	border: 1px solid #FFC6C2;
+}
+
+.errorArea label,
+.errorArea .label {
+	color: #FF0E00;
+}
+
+.errorArea input.inputText:focus,
+.errorArea input.inputPassword:focus,
+.errorArea input.inputSearch:focus,
+.errorArea input.inputDate:focus {
+	-webkit-box-shadow: 0 0 3px #d00c00;
+	-moz-box-shadow: 0 0 3px #d00c00;
+	box-shadow: 0 0 3px #d00c00;
+}
+
+.errorArea .inlineError,
+.errorArea .formError {
+	font-size: 11px;
+	line-height: 1.636;
+	color: #ff0e00;
+	display: block;
+	height: 18px;
+	overflow: hidden;
+	white-space: nowrap;
+	clear: left;
+	text-overflow: ellipsis;
+	width: 400px;
+}
+
+/* Help texts */
+
+.helpTxt {
+	font-size: 11px;
+	line-height: 1.636;
+	color: #999;
+	display: block;
+	height: 18px;
+	overflow: hidden;
+	white-space: nowrap;
+	clear: left;
+	text-overflow: ellipsis;
+}
+
+/* Form grid control */
+
+	/* One-fourth width */
+
+	.tinyInput input.inputText,
+	.tinyInput input.inputPassword,
+	.tinyInput input.tinyInput,
+	.tinyInput input.inputDate {
+		width: 16px;
+	}
+
+	.tinyInput select,
+	.alignBlocks p.tinyInput,
+	.alignFields p.tinyInput,
+	.alignFields .tinyInput .helpTxt {
+		width: 26px;
+	}
+
+	/* Half width */
+
+	.smallInput input.inputText,
+	.smallInput input.inputPassword,
+	.smallInput input.inputSearch,
+	.smallInput input.inputDate {
+		width: 52px;
+	}
+
+	.smallInput select,
+	.alignBlocks p.smallInput,
+	.alignFields p.smallInput,
+	.alignFields .smallInput .helpTxt {
+		width: 62px;
+	}
+
+	/* Normal width */
+
+	input.inputText,
+	input.inputPassword,
+	input.inputSearch,
+	input.inputDate {
+		width: 124px;
+	}
+
+	select,
+	.alignBlocks p,
+	.alignFields p,
+	.alignFields p .helpTxt,
+	.horizontal label,
+	.horizontal .label,
+	.horizontal .oneLiner :first-child label,
+	.horizontal .oneLiner :first-child .label,
+	.horizontal .oneLiner .firstChild label,
+	.horizontal .oneLiner .firstChild .label {
+		width: 170px;
+	}
+
+	/* Two-third width */
+
+	.mediumInput input.inputText,
+	.mediumInput input.inputPassword,
+	.mediumInput input.inputSearch,
+	.mediumInput input.inputDate {
+		width: 196px;
+	}
+
+	.mediumInput select,
+	.alignBlocks p.mediumInput,
+	.alignFields p.mediumInput,
+	.alignFields .mediumInput .helpTxt {
+		width: 206px;
+	}
+
+	/* Double width */
+
+	.bigInput input.inputText,
+	.bigInput input.inputPassword,
+	.bigInput input.inputSearch,
+	.bigInput input.inputDate,
+	textarea {
+		width: 268px;
+	}
+
+	.bigInput select,
+	.alignBlocks p.bigInput,
+	.alignFields p.bigInput,
+	.alignFields .bigInput .helpTxt {
+		width: 278px;
+	}
+
+	/* Left padding (horizontal) */
+
+	.horizontal .alignBlocks,
+	.horizontal .alignFields,
+	.horizontal .alignButtons,
+	.horizontal .helpTxt,
+	.horizontal .inlineError,
+	.horizontal .formError {
+		padding-left: 134px; /* This value should be the same as the width value in "Normal width" */
+	}
+
+	/* Left margin (horizontal) */
+
+	.horizontal input.inputSubmit,
+	.horizontal input.inputButton,
+	.horizontal button,
+	.horizontal a.button {
+		margin-left: 134px; /* This value should be the same as the width value in "Normal width" */
+	}
+
+	/* Maximum width for inputlist (horizontal) */
+
+	.horizontal .inputList li label {
+		width: 278px; /* This value should be the same as the width value in "Double width" */
+	}
+
+/* Floating elements */
+
+	/* Floating blocks */
+
+	.alignBlocks {
+		position: relative;
+		left: -5px;
+		padding-bottom: 12px;
+	}
+
+	.alignBlocks:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+	.ie6 .alignBlocks, .ie7 .alignBlocks { zoom: 1; }
+
+		.alignBlocks p {
+			padding: 0 5px;
+			overflow: hidden;
+			float: left;
+		}
+
+	/* Floating fields */
+
+	.alignFields {
+		position: relative;
+		padding-bottom: 12px;
+	}
+
+	.alignFields:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+	.ie6 .alignFields, .ie7 .alignFields { zoom: 1; }
+
+		.alignFields label {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.alignFields input,
+		.alignFields select {
+			float: left;
+		}
+
+		.ie6 .alignFields input,
+		.ie6 .alignFields select,
+		.ie7 .alignFields input,
+		.ie7 .alignFields select {
+			float: none;
+		}
+
+		.alignFields p {
+			padding: 20px 12px 0 0;
+			float: left;
+		}
+
+	/* Floating buttons */
+
+	.alignButtons {
+		padding-bottom: 12px;
+	}
+
+	.alignButtons:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+	.ie6 .alignButtons, .ie7 .alignButtons { zoom: 1; }
+
+		.alignButtons p {
+			float: left;
+			padding-right: 4px;
+			padding-bottom: 0;
+		}
+
+/* Oneliners */
+
+.oneLiner {
+	padding-bottom: 12px;
+}
+
+.oneLiner:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ie6 .oneLiner, .ie7 .oneLiner { zoom: 1; }
+
+	.oneLiner p {
+		float: left;
+		padding: 0 6px 0 0;
+	}
+
+		.oneLiner label {
+			float: left;
+			padding-right: 6px;
+		}
+
+		.oneLiner input,
+		.oneLiner select {
+			float: left;
+		}
+
+	.oneLiner .inputList {
+		padding-bottom: 0;
+	}
+
+	.ie6 .oneLiner .inputList input {
+		left: 0;
+	}
+
+		.oneLiner .inputList li {
+			float: left;
+			padding-bottom: 0;
+		}
+
+/* Horizontal */
+
+.horizontal label,
+.horizontal .label {
+	float: left;
+}
+
+	/* Floating blocks */
+
+	.horizontal .alignBlocks .helpTxt,
+	.horizontal .alignBlocks .inlineError,
+	.horizontal .alignBlocks .formError {
+		padding-left: 0;
+	}
+
+	/* Floating fields */
+
+	.horizontal .alignFields .helpTxt,
+	.horizontal .alignFields .inlineError,
+	.horizontal .alignFields .formError {
+		padding-left: 0;
+	}
+
+	.horizontal .alignFields p {
+		padding-top: 0;
+	}
+
+		.horizontal .alignFields label {
+			top: 2px;
+		}
+
+	/* Floating buttons */
+
+	.horizontal .alignButtons input.inputSubmit,
+	.horizontal .alignButtons input.inputButton,
+	.horizontal .alignButtons button,
+	.horizontal .alignButtons a.button,
+	.horizontal .alignFields input.inputSubmit,
+	.horizontal .alignFields input.inputButton,
+	.horizontal .alignFields button,
+	.horizontal .alignFields a.button,
+	.horizontal .alignBlocks input.inputSubmit,
+	.horizontal .alignBlocks input.inputButton,
+	.horizontal .alignBlocks button,
+	.horizontal .alignBlocks a.button {
+		margin-left: 0;
+	}
+
+	/* Inputlists */
+
+	.horizontal .inputList:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+	.ie6 .horizontal .inputList, .ie7 .horizontal .inputList { zoom: 1; }
+
+	.horizontal .inputList ul {
+		float: left;
+	}
+
+		.horizontal .inputList li label {
+			float: none;
+		}
+
+	/* Oneliners */
+
+	.horizontal .oneLiner label,
+	.horizontal .oneLiner .label {
+		width: auto;
+		padding: 2px 6px 2px 0;
+	}
+
+		.horizontal .oneLiner :first-child label,
+		.horizontal .oneLiner :first-child .label,
+		.horizontal .oneLiner .firstChild label,
+		.horizontal .oneLiner .firstChild .label {
+			padding: 2px 0;
+		}
+
+		.horizontal .formSectionContent .oneLiner :first-child label,
+		.horizontal .formSectionContent .oneLiner :first-child .label,
+		.horizontal .formSectionContent .oneLiner .firstChild label,
+		.horizontal .formSectionContent .oneLiner .firstChild .label {
+			width: auto;
+			padding: 2px 6px 2px 0;
+		}
+
+	.horizontal .oneLiner input.inputSubmit,
+	.horizontal .oneLiner input.inputButton,
+	.horizontal .oneLiner button,
+	.horizontal .oneLiner a.button {
+		margin-left: 0;
+	}
+
+	.horizontal .oneLiner .inputList {
+		float: left;
+	}
+
+		.horizontal .oneLiner .inputList li label {
+			width: auto;
+		}
+
+	/* Form sections */
+
+	.formSection {
+		padding: 0 0 8px 0;
+	}
+
+	.formSection:after  { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+	.ie6 .formSection, .ie7 .formSection { zoom: 1; }
+
+		.formSection p {
+			padding-bottom: 2px;
+		}
+
+		.formSection .oneLiner p {
+			padding-bottom: 0;
+		}
+
+	.horizontal .formSectionContent {
+		padding-bottom: 4px;
+		float: left;
+	}
+
+	.horizontal .formSectionContent .alignBlocks,
+	.horizontal .formSectionContent .alignFields,
+	.horizontal .formSectionContent .alignButtons,
+	.horizontal .formSectionContent .helpTxt,
+	.horizontal .formSectionContent .inlineError,
+	.horizontal .formSectionContent .formError {
+		padding-left: 0;
+	}
+
+/* Messages */
+
+.message {
+	padding: 12px 12px 0 12px;
+	border: 1px solid #ddd;
+	margin-bottom: 24px;
+	border-color: #ddd;
+	color: #333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+}
+
+	.message .close:link,
+	.message .close:visited {
+		display: block;
+		position: absolute;
+		overflow: hidden;
+		padding: 4px;
+		top: 4px;
+		right: 4px;
+		height: 8px;
+		width: 8px;
+		border: 0;
+		text-indent: -9999px;
+		background: url(../../images/close.png) no-repeat 4px 4px;
+		opacity: .50;
+		filter: alpha(opacity=50);
+		-ms-filter: "alpha(opacity=50)";
+		-khtml-opacity: .50;
+		-moz-opacity: .50;
+	}
+
+	.message .close:hover,
+	.message .close:active,
+	.message .close:focus {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-ms-filter: "alpha(opacity=100)";
+		-khtml-opacity: 1;
+		-moz-opacity: 1;
+	}
+
+	/* Error messages */
+
+	.error {
+		border-color: #ffc6c2;
+		color: #ff0e00;
+		background-color: #feebea !important;
+	}
+
+	.error h1,
+	.error h2,
+	.error h3,
+	.error h4 {
+		color: #fff;
+	}
+
+		.error a {
+			color: #ff0e00;
+			border-color: #df5c54;
+		}
+
+		.error a:link,
+		.error a:visited {
+			color: #ff0e00;
+			border-color: #df5c54;
+		}
+
+		.error a:hover,
+		.error a:active,
+		.error a:focus {
+			color: #ff0e00;
+			border-color: #df271c;
+		}
+
+	/* Success messages */
+
+	.success {
+		border-color: #dbf5bb;
+		color: #86f500 !important;
+		background-color: #e3f5cd;
+	}
+	
+	.success p {
+		color: #498600;
+	}
+
+	.success h1,
+	.success h2,
+	.success h3,
+	.success h4 {
+		color: #fff;
+	}
+
+		.success a {
+			color: #fff;
+			border-color: #a0c673;
+		}
+
+		.success a:link,
+		.success a:visited {
+			color: #fff;
+			border-color: #a0c673;
+		}
+
+		.success a:hover,
+		.success a:active,
+		.success a:focus {
+			color: #fff;
+			border-color: #fff;
+		}
+
+	/* Notice messages */
+
+	.notice {
+		border-color: #e6901e;
+		color: #332d1c;
+		background-color: #ffe38a;
+		background-image: none;
+		background-image: -moz-linear-gradient(0% 100% 90deg,#ffe38a, #ffce58);
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffce58), to(#ffe38a));
+	}
+
+	.notice h1,
+	.notice h2,
+	.notice h3,
+	.notice h4 {
+		color: #000;
+	}
+
+		.notice a {
+			color: #000;
+			border-color: #ab985d;
+		}
+
+		.notice a:link,
+		.notice a:visited {
+			color: #000;
+			border-color: #ab985d;
+		}
+
+		.notice a:hover,
+		.notice a:active,
+		.notice a:focus {
+			color: #000;
+			border-color: #000;
+		}
+
+/* Buttons */
+
+input.inputSubmit,
+input.inputButton,
+button,
+a.button,
+a.button:link,
+a.button:visited {
+	font: 100 11px/1.636 Verdana, sans-serif;
+	color: #fff;
+	background: #6caddf;
+	border: none;
+	padding: 6px;
+	cursor: pointer;
+	overflow: visible;
+	white-space: nowrap;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin: 0;
+}
+
+button::-moz-focus-inner{ padding: 0; border: 0 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	input.inputSubmit,
+	input.inputButton,
+	button {
+		padding: 8px 16px;
+		font-size: 14px;
+		font-weight: 700;
+	}
+}
+.ie8 input.inputSubmit,
+.ie8 input.inputButton,
+.ie8 button {
+	padding: 4px 16px;
+}
+
+input.inputSubmit:hover,
+input.inputButton:hover,
+input.buttonHover,
+button:hover,
+button.buttonHover,
+a.button:hover,
+a.button:active,
+a.button:focus {
+	background: #437aa5;
+}
+
+input.inputSubmit[disabled="disabled"],
+input.inputButton[disabled="disabled"],
+button[disabled="disabled"],
+a.disabledButton {
+	cursor: default;
+	opacity: .50;
+	filter: alpha(opacity=50);
+	-ms-filter: "alpha(opacity=50)";
+	-khtml-opacity: .50;
+	-moz-opacity: .50;
+}
+
+a.button,
+a.button:link,
+a.button:visited {
+	float: left;
+	text-decoration: none;
+	padding: 5px 12px !important;
+}
+
+/*
+	Form styles
+*/
+
+input, textarea, select, button {
+	font-family: Arial, sans-serif;
+}
+
+/* checkbox pair */
+
+.checkboxPair label {
+		display: block;
+		padding-left: 18px;
+		text-indent: -18px;
+		width: 100%;
+}
+
+.checkboxPair input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin: 0 5px 0 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -4px;
+    *overflow: hidden;
+}
+
+	/* content override */
+	.content .checkboxPair li {
+		padding-left: 0 !important;
+		background: none !important;
+	}

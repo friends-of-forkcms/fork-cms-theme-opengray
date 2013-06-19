@@ -1,0 +1,125 @@
+/*
+
+    Typography
+
+    @author       Mathijs Beks <mathijs.beks@wijs.be>
+
+*/
+
+/* Headings */
+
+h1 {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	color: #222;
+	font-weight: 700;
+	font-size: 32px;
+	padding: 0 0 12px 0;
+	line-height: 1.1;
+}
+
+	.ie9 h1 {
+		font-family: Verdana, Helvetica, Arial, sans-serif;
+	}
+
+h2 {
+	font-family:Verdana, Helvetica, Arial, sans-serif;
+	color: #222;
+	font-weight: 600;
+	font-size: 22px;
+	padding: 0 0 8px 0;
+	line-height: 1.2;
+}
+
+	.ie9 h2 {
+		font-family: Verdana, Helvetica, Arial, sans-serif;
+	}
+	
+
+#solutionMenuInner h2 {
+	line-height: 22px;
+}
+
+	h2 span {
+		color: #6babdd;
+	}
+
+	h2 a {
+		border-bottom: none;
+	}
+
+h3 {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	padding: 0 0 8px 0;
+	line-height: 1.2;
+}
+
+	.ie9 h3 {
+		font-family: Verdana, Helvetica, Arial, sans-serif;
+	}
+
+	h3 a {
+		border-bottom: none;
+	}
+
+h4 {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	padding: 0 0 12px 0;
+	font-weight: 600;
+}
+
+	.ie9 h4 {
+		font-family: Verdana, Helvetica, Arial, sans-serif;
+	}
+
+/* Links */
+
+a {
+	border-bottom: 1px solid #666;
+	text-decoration: none;
+	outline: 0;
+	-webkit-transition: all 200ms ease-out;
+	   -moz-transition: all 200ms ease-out;
+	     -o-transition: all 200ms ease-out;
+	        transition: all 200ms ease-out;
+}
+
+#columnLeft a {
+	-webkit-transition: none;
+	   -moz-transition: none;
+	     -o-transition: none;
+	        transition: none;
+}
+
+a:link {
+	color: #6caddf;
+	border-color: #afcfe9;
+}
+
+a:visited {
+	color: #6caddf;
+	border-color: #afcfe9;
+}
+
+a:hover {
+	color: #5a95c3;
+	border-color: #5a95c3;
+}
+
+a:active {
+	color: #6caddf;
+	border-color: #afcfe9;
+}
+
+a:focus {
+	color: #2f526d;
+	border-color: #2f526d;
+}
+
+ul {
+	list-style: none;
+}
+
+/* .content defaults */

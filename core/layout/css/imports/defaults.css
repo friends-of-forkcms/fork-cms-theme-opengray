@@ -1,0 +1,31 @@
+/*
+	General classes
+*/
+
+.hidden { display: none; }
+.block { display: block; }
+.noPadding { padding: 0 !important; }
+.noMargin { margin: 0 !important; }
+.floatLeft { float: left; }
+.floatRight { float: right; }
+.noBorder { border: none; }
+#skip, .accessibility { position: absolute; top: -9999px; left: -9999px; } /* For screenreaders */
+.articleMeta { color: #666666; font-size: 11px; text-transform: uppercase; }
+
+/*
+	Image classes
+*/
+
+img.alignLeft {
+	float: left;
+	padding: 0 10px 10px 0;
+}
+
+img.alignRight {
+	float: right;
+	padding: 0 0 10px 10px;
+}
+
+.linkedImage {
+	border: none !important;
+}

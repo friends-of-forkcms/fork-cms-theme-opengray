@@ -1,0 +1,72 @@
+/*
+	Reset
+*/
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section { display: block; }
+body, form, ol, ul, dl, li, dt, dd, td, th ,tr, h1, h2, h3, h4, h5, h6, p, pre, blockquote, address { margin: 0; padding: 0; }
+ol, ul { list-style: none; }
+img { border:0; }
+fieldset { margin: 0; padding: 0; border: 0; }
+input, select, textarea { font-size: 100%; vertical-align: middle; }
+table { border-collapse: collapse; border-spacing: 0; empty-cells: show; }
+th { text-align: left; }
+a:focus { overflow: hidden; }
+
+/*
+	Clearfix
+*/
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.ie6 .clearfix,
+.ie7 .clearfix {
+	zoom: 1;
+}
+
+/*
+	General
+*/
+
+body {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 1.6;
+	color: #666;
+	background: #FFF;
+}
+
+/*
+	Typography and text styles
+*/
+
+/* General */
+
+p {
+	padding: 0 0 12px 0;
+}
+
+strong, th, thead td, h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+
+tr {
+	padding: 5px 0 5px 0;
+}
+
+thead tr {
+	background: #fff !important;
+}
+
+tr:nth-child(even) {
+	background: #fff;
+}
+
+tr:nth-child(odd) {
+	background: #f9f9f9;
+}
