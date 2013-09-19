@@ -325,12 +325,13 @@
 					padding-bottom: 12px;
 				}
 
-					.navBlock ul li,
-					.navBlockGray ul li,
-					.navBlockWhite ul li {
-						background: url('../../images/ic_arrow_trans.png') no-repeat 0 7px;
-						padding-left: 18px;
-						padding-bottom: 6px;
+					.defaultContent ul li, 
+					.navBlock ul li, 
+					.navBlockGray ul li, 
+					.navBlockWhite ul li { 
+						background: url('../../images/ic_arrow_trans.png') no-repeat 0 7px; 
+						padding-left: 18px; 
+						padding-bottom: 6px; 
 					}
 
 				/* grey */
