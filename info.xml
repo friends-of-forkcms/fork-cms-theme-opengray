@@ -3,7 +3,7 @@
 	<name>opengray</name>
 	<version>1.0.1</version>
 	<requirements>
-		<minimum_version>3.6.0</minimum_version>
+		<minimum_version>3.7.0</minimum_version>
 	</requirements>
 	<thumbnail>thumbnail.png</thumbnail>
 	<description>
@@ -19,7 +19,7 @@
 	</authors>
 	<metanavigation supported="true" />
 	<templates>
-		<template label="default" path="core/layout/templates/default.tpl">
+		<template label="Default" path="Core/Layout/Templates/Default.tpl">
 			<positions>
 				<position name="main" />
 				<position name="top">
@@ -38,7 +38,7 @@
 				[/,/,top,top], [/,/,login,login], [main,main,main,main], [/,doormat,/,/]
 			</format>
 		</template>
-		<template label="home" path="core/layout/templates/home.tpl">
+		<template label="Home" path="Core/Layout/Templates/Home.tpl">
 			<positions>
 				<position name="main" />
 				<position name="left" />
@@ -59,7 +59,7 @@
 				[/,/,top,top], [/,/,login,login], [main,main,main,main], [left,left,right,right], [/,doormat,doormat,/]
 			</format>
 		</template>
-		<template label="one page" path="core/layout/templates/onepage.tpl">
+		<template label="One page" path="Core/Layout/Templates/Onepage.tpl">
 			<positions>
 				<position name="main" />
 				<position name="bottom" />
@@ -79,7 +79,7 @@
 				[/,/,top], [/,/,login], [main,main,main], [bottom,bottom,bottom], [/,doormat,/]
 			</format>
 		</template>
-		<template label="2 columns" path="core/layout/templates/2col.tpl">
+		<template label="2 columns" path="Core/Layout/Templates/2col.tpl">
 			<positions>
 				<position name="main" />
 				<position name="right" />
@@ -100,7 +100,7 @@
 				[/,/,top], [/,/,login], [main,main,right], [bottom,bottom,bottom], [/,doormat,/]
 			</format>
 		</template>
-		<template label="3 columns" path="core/layout/templates/3col.tpl">
+		<template label="3 columns" path="Core/Layout/Templates/3col.tpl">
 			<positions>
 				<position name="main" />
 				<position name="left" />
@@ -122,7 +122,7 @@
 				[/,/,top], [/,/,login], [left,main,right], [bottom,bottom,bottom], [/,doormat,/]
 			</format>
 		</template>
-		<template label="search" path="core/layout/templates/search.tpl">
+		<template label="Search" path="Core/Layout/Templates/Search.tpl">
 			<positions>
 				<position name="main" />
 				<position name="top" />
