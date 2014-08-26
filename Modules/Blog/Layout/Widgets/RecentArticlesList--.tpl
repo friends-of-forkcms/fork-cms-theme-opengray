@@ -10,7 +10,7 @@
 		{iteration:widgetBlogRecentArticlesList}
 			<li><span>{$widgetBlogRecentArticlesList.publish_on|date:'d/m':{$LANGUAGE}}</span><a href="{$widgetBlogRecentArticlesList.full_url}" title="{$widgetBlogRecentArticlesList.title}">{$widgetBlogRecentArticlesList.title}</a></li>
 		{/iteration:widgetBlogRecentArticlesList}
-		<li class="lastChild"><a class="subAll" href="{$var|geturlforblock:'blog'}">{$lblAllArticles|ucfirst}</a></li>
+		<li class="lastChild"><a class="subAll" href="{$var|geturlforblock:'Blog'}">{$lblAllArticles|ucfirst}</a></li>
 	</ul>
 </div>
 {/option:widgetBlogRecentArticlesList}

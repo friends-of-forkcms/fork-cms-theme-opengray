@@ -13,5 +13,5 @@
 </div>
 <div id="searchContainer">
 	{$txtQError}
-	{include:modules/search/layout/templates/results.tpl}
+	{include:Modules/Search/Layout/Templates/Results.tpl}
 </div>
