@@ -27,5 +27,5 @@
 			</footer>
 		</article>
 	{/iteration:widgetBlogRecentArticlesFull}
-	<p class="clearfix"><a class="all" href="{$var|geturlforblock:'blog'}">{$lblAllArticles}</a></p>
+	<p class="clearfix"><a class="all" href="{$var|geturlforblock:'Blog'}">{$lblAllArticles}</a></p>
 {/option:widgetBlogRecentArticlesFull}

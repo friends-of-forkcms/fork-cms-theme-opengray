@@ -6,5 +6,5 @@
 			<li><span>{$widgetBlogRelatedSolutions.publish_on|date:{$dateFormatLong}:{$LANGUAGE}}</span><a href="{$widgetBlogRelatedSolutions.full_url}">{$widgetBlogRecentArticlesList.title}</a></li>
 		{/iteration:widgetBlogRelatedSolutions}
 	</ul>
-	<a class="all moreArticles" href="{$var|geturlforblock:'blog'}">{$lblAllArticles}</a></div>
+	<a class="all moreArticles" href="{$var|geturlforblock:'Blog'}">{$lblAllArticles}</a></div>
 {/option:widgetBlogRelatedSolutions}  

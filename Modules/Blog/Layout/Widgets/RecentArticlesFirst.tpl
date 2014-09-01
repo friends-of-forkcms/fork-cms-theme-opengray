@@ -34,6 +34,6 @@
 {/iteration:widgetBlogRecentArticlesFirst}
 {/option:!widgetBlogRecentArticlesFirst.first} 
 </ul>
-<a class="subAll" href="{$var|geturlforblock:'blog':'index'}">{$lblAllArticles|ucfirst}</a>
+<a class="subAll" href="{$var|geturlforblock:'Blog':'Index'}">{$lblAllArticles|ucfirst}</a>
 {/option:widgetBlogRecentArticlesFirst}
 </div>             
